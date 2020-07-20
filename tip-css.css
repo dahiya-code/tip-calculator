@@ -1,0 +1,82 @@
+body{font-family: Roboto;
+	color:#fff;
+  background: #8E0E00;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #8E0E00, #1F1C18);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #8E0E00, #1F1C18);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
+  h1,h2{text-align: center;
+  	margin: 0 2%;
+  	margin-top: 2%;}
+  	h1{
+  		text-transform: uppercase;
+  	}
+#box-main {
+  height: 525px;
+  width: 360px;
+  margin: 100px auto;
+  background: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+#calculator{color: #000;}
+#brandName {
+  background: #1F030C;
+  background: -webkit-linear-gradient(to left, #ff0000, #751010);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ff0000, #751010);
+  color: white;
+  margin: 0;
+  padding: 5% 5%;
+  text-transform: uppercase;
+  font-size: 200%;
+  font-weight: normal;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+}
+
+label,input,#service,button {
+  margin-left: 10%;
+  margin-top: 7%;
+}
+
+input,#service{margin-top: 2%;}
+
+label{
+	font-size: 160%;
+	font-weight: bold;
+}
+
+form input[type="text"],form input[type="number"] {
+  width:65%;
+}
+ 
+ button{background-color:#1F1C18; 
+ 	color: #fff;
+ 	padding: 2%;
+ 	border-radius: 5px;
+ 	border:none;}
+
+ button:hover{background-color:#8E0E00;
+ background: -webkit-linear-gradient(to left, #ff0000, #751010);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ff0000, #751010);}	
+
+ input:hover,select:hover{background-color:#d2d6d6; }
+ /*::placeholder:hover {  Chrome, Firefox, Opera, Safari 10.1+ 
+  color:#fff;
+  opacity: 0.7;  Firefox 
+}*/
+
+input:focus,select:focus{box-shadow: 0 0 8px #00ffea; }
+
+#here{color: #000;
+  font-size: 160%;
+  font-weight: bold;
+ text-align: center;
+  
+}

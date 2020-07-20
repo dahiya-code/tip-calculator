@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="tip-css.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="calculator.png">
+</head>
+<body>
+	
+  <div>
+    <h1>Tip Calculator <i class="fas fa-money-bill-alt"></i></h1>
+    <h2>Did you just finish an evening out with friends and family? And now you are confused on how much tip should you pay? Don't worry we have it sorted for you! Just fill in the required fields and we'll tell you how much to Pay</h2>
+       <div id="box-main">
+         <h1 id="brandName">TipCal 2000</h1>
+         <div id="calculator">
+           <form>
+             <label for="amt">How much is your bill?</label><br>
+             <input type="number" name="amt" id="amt" placeholder="0"><br>
+
+             <label for="service">How was your service?</label><br>
+             <select id="service">
+            <option disabled selected value="0" style="color: #fff">-- Choose an Option --</option>
+            <option value="0.3">30&#37; &#45; Outstanding</option>
+            <option value="0.2">20&#37; &#45; Good</option>
+            <option value="0.15">15&#37; &#45; It was OK</option>
+            <option value="0.1">10&#37; &#45; Bad</option>
+            <option value="0.05">5&#37; &#45; Terrible</option>
+        </select><br>
+
+        <label for="ppl">How many people are sharing the bill?</label><br>
+             <input type="number" name="ppl" id="ppl" placeholder="Number of People"><br>
+           </form>
+           <button type="button" id="calculate">Calculate!</button>
+           <button type="button" id="clear" onclick="clr()">Calculate again!</button>
+         </div>
+
+         <div id="here"><span id="tip">0.00</span>
+    <small id="each">each</small></div>
+       </div>
+  </div>
+	
+<!--js-->
+<script src="tip-js.js"></script>
+<script src="https://kit.fontawesome.com/292b55ca94.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
